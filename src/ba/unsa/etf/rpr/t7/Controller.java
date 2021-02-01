@@ -114,7 +114,9 @@ public class Controller {
         korisnik.setEmail(fldEmail.getText());
         korisnik.setPassword(pswPassword.getText());
         korisnik.setUsername(fldUsername.getText());
-        lwKorisnici.getItems().add(korisnik);
+        model.getKorisnici().add(korisnik);
+        model.setTrenutniKorisnik(korisnik);
+
     }
 
     public void actionKraj(ActionEvent actionEvent) {
